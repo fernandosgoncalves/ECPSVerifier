@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ecps_Verifier
+Bundle-SymbolicName: ecps_verifier;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: ecps_verifier.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.e4.ui.dialogs;bundle-version="1.1.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Import-Package: org.eclipse.core.internal.resources,
+ org.eclipse.core.resources

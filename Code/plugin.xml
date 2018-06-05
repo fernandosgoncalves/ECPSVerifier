@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="parser.EcpsVerifierInvoke"
+            id="ecps_verifier.invoke"
+            name="mainInvoke">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu?after=project">
+         <menu
+               id="ecpsVerifierMenu"
+               label="ECPS Design">
+            <command
+                  commandId="ecps_verifier.invoke"
+                  helpContextId="Automata generation"
+                  label="ECPS Verifier"
+                  style="push">
+            </command>
+            <command
+                  commandId="ecps_verifier.command2"
+                  helpContextId="Properties specification"
+                  label="Properties specification"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+
+</plugin>
